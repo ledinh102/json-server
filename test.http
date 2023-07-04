@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:4000/api
+
+###
+# @name getAllCategories
+GET {{baseUrl}}/categories
+
+###
+# @name updateCategory
+PATCH {{baseUrl}}/categories/1
+Content-Type: application/json
+
+{
+  "title": "Thich game"
+}
+
+
+###
+# @name addCategory
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "title": "Thich bia",
+  "author": "Ta la ai"
+}
