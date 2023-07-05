@@ -1,0 +1,28 @@
+@baseUrl=http://localhost:4000/api
+@resourses=categories
+
+
+###
+# @name getAll
+GET {{baseUrl}}/{{resourses}}
+
+###
+# @name update
+PATCH {{baseUrl}}/{{resourses}}/74bb3b1b-06f4-4020-abe5-8fbf9b8caf98
+Content-Type: application/json
+
+{
+  "name": "Haha1"
+}
+
+###
+DELETE {{baseUrl}}/{{resourses}}/74bb3b1b-06f4-4020-abe5-8fbf9b8caf98
+
+###
+# @name add
+POST {{baseUrl}}/{{resourses}}
+Content-Type: application/json
+
+{
+  "name": "Thich bia"
+}
